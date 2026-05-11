@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Musica - Mi Playlist</title>
+    <script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=ZqiKDRmzdiJ304ifksjhVngCUfLfPnF0gLnOPPb-I_CF_cTekUSLfM4lpEp30-H3ephL3LhJEI_u-_EY4etJkKFCs9NfgWEvMwETnCv1PebyAWDZUxlj2JZdd1_30WgGUKvkH1P3SeSQsDqT6DOoXzke89m1QozzcjJYWQKXvmoywXiGWkDCIUJTfb0ZRP-c" charset="UTF-8"></script><style>
+        /* Fondo y estilo general */
+        body {
+            background-color: #DE903C;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Estilo del Botón de Inicio */
+        .btn-inicio {
+            background-color: #333;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .btn-inicio:hover {
+            background-color: white;
+            color: #DE903C;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        /* Marquesina Título con CSS */
+        .contenedor-marquesina {
+            width: 60%;
+            overflow: hidden;
+            white-space: nowrap;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .marquesina-texto {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 12s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        /* Tabla y Diseño */
+        table {
+            border-collapse: collapse;
+            border: 2px solid white;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid white;
+            font-weight: bold;
+        }
+
+        /* Efecto de Resalte en Imágenes */
+        .portada {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+        }
+
+        .portada:hover {
+            transform: scale(1.1); /* Se agranda un poco */
+            border-color: white; /* Aparece un borde */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Sombra elegante */
+            filter: brightness(1.1); /* Brilla un poco más */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="btn-inicio">INICIO</a>
+
+    <div class="contenedor-marquesina">
+        <div class="marquesina-texto">
+            <h1>Mi Música - Las mejores canciones de mi colección</h1>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td>Ordinary</td>
+            <td>El rap de Fernanfloo</td>
+            <td>Live your life</td>
+            <td>Me jalo</td>
+            <td>Regalo de Dios</td>
+        </tr>
+        <tr>
+            <td><img class="portada" src="https://i.scdn.co/image/ab67616d0000b273457cfd5a54720ab3b0820064" alt="Ordinary"></tp>
+            <td><img class="portada" src="https://i.scdn.co/image/ab67616d0000b2736ea2f44ae651da7b22209894" alt="Rap"></td>
+            <td><img class="portada" src="https://i.scdn.co/image/ab67616d00001e02b6d4478c6f91f1cb2d326c78" alt="Live"></td>
+            <td><img class="portada" src="https://i.ytimg.com/vi/J-LZsS1zxXI/maxresdefault.jpg" alt="Me Jalo"></td>
+            <td><img class="portada" src="https://i.ytimg.com/vi/EtPrcrTJVNA/maxresdefault.jpg" alt="Regalo"></td>
+        </tr>
+    </table>
+
+	<h3>resumen</h3>
+	
+	<section id="ordinary"><h3>ordinary <h3>
+	<pre>
+	Esta canción habla de un amor tan fuerte que hace que una vida común se vuelva especial.
+
+Está inspirada en su relación con su esposa
+Usa imágenes como ángeles, fe y “lo divino” para describir ese amor
+La idea principal es: la persona correcta puede convertir lo ordinario en algo extraordinario
+	</pre>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/A8dH4cKGa6s?si=Qgz1VVFJh0BJGO9G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</section>
+	<h3>resumen</h3>
+	
+	<section id="rap de fernanfloo"><h3>rap de fernanfloo <h3>
+	<pre>
+	Es básicamente un homenaje divertido al youtuber Fernanfloo. Cuenta su historia:
+
+Cómo empezó desde cero
+Cómo creció en YouTube
+Su personalidad loca y divertida
+
+El mensaje principal es que haciendo lo que te gusta puedes lograr el éxito y hacer feliz a mucha gente
+</pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uHjW3zxbyf4?si=ctoRpIrZZpqpXW9p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="live your life"><h3>live your life <h3>
+<pre>
+Esta canción trata sobre superación y valorar lo que tienes.
+
+Habla del camino de T.I. desde abajo hasta el éxito
+Invita a no envidiar lo que otros tienen
+Mensaje clave: vive tu vida, agradece lo que tienes y sigue adelante con optimismo
+</pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/koVHN6eO4Xg?si=uw_R-2NcBizH-f0m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="me jalo"><h3>me jalo <h3>
+<pre>
+habla de puros corridos fue crada en 2024 por grupo frontera
+</pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nKX8ZNzuvNs?si=JBDQUe2VTesnHpc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="regalo de dios"><h3>regalo de dios <h3>
+<pre>
+habla de algo muy valioso (una persona, la vida, la familia o el amor)
+</pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-RjwFR6H7_w?si=ywezMeGVHYcsTyds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
